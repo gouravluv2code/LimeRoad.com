@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from "react";
+import React, { useState } from "react";
 import { useEffect } from "react";
 import styles from "../ProductsPage/Product.module.css";
 import axios from "axios";
@@ -14,13 +14,7 @@ import {
 } from "@chakra-ui/react";
 
 import { AddIcon, MinusIcon } from "@chakra-ui/icons";
-// import { useDispatch, useSelector } from "react-redux";
-// import { getProducts, filterProduct } from "../../Redux/Product/Product.Action";
-
-
 const Products = () => {
-//   const dispatch = useDispatch();
-//   const { data } = useSelector((store) => store.products);
 let filterData;
 const [loading,setLoading]=useState(false)
 const [error,setError]=useState(false)
