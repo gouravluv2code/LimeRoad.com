@@ -4,7 +4,6 @@ import React from "react";
 import Homepage from "../Pages/HomePage/HomePage"
 import Products from "../Pages/ProductsPage/Products";
 import Login from "./../Pages/Signup_Login/Login";
-import Basepage from "../Pages/BasePage";
 import PrivateRoute from "../Components/PrivateRoute";
 import SingleProductPage from "../Pages/SingleProductPage";
 import PaymentPage from "../Pages/PaymentPage/PaymentPage";
@@ -14,7 +13,6 @@ const Allroutes = () => {
     <Routes>
       <Route path="/" element={<Homepage />}></Route>
       <Route path="/login" element={<Login />}></Route>
-      <Route path="/base" element={<Basepage />}></Route>
       <Route
         path="/products"
         element={

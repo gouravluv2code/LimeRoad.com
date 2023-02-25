@@ -1,19 +1,16 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-// import { Link } from "react-router-dom";
-import { Card, CardBody, CardFooter, Image, Stack, Heading, Text, Button, Box } from '@chakra-ui/react'
-// import axios from "axios"
+import { useParams, useSearchParams } from "react-router-dom";
+import { Card, CardHeader, CardBody, CardFooter, Image, Stack, Heading, Text, Button, Box, color } from '@chakra-ui/react'
 import {BsWhatsapp} from "react-icons/bs"
 import {TbJewishStar} from "react-icons/tb"
-// import wishlist from "../Images/heart.png"
 import { useContext } from "react";
 
-import { CartContext } from "./cart/context/CartContext";
+import { CartContext } from "../context/CartContext";
 
 function getdata(id) {
   return fetch(`http://localhost:8080/products/${id}`).then((res) => res.json());
 }
-function SingleProductPage() {
+function SingleProduct() {
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(false);
   const[click,setClick]=useState(true)
@@ -29,7 +26,6 @@ const {removeProduct,increment,decrement}=useContext(CartContext)
       setLoading(false);
     });
   }, []);
-
    if(loading)
    {
     return <h1>...loading</h1>
@@ -77,6 +73,9 @@ const {removeProduct,increment,decrement}=useContext(CartContext)
             ))
           }
         </Box>
+
+         
+
         <Text mt="21" fontSize="1.3rem"  >
           M.R.P. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{":"}
           <del> {data.before_disc}  </del>
@@ -105,6 +104,8 @@ const {removeProduct,increment,decrement}=useContext(CartContext)
        </Button>) : (<Button onClick={()=>removeProduct(data.id)} style={{backgroundColor:"red" }} width="81%"  colorScheme='blue'p={25}  >Remove From Cart</Button>)
 
        }
+       
+      
       </Box>
       
     </CardFooter>
@@ -116,4 +117,4 @@ const {removeProduct,increment,decrement}=useContext(CartContext)
 
   );
 }
-export default SingleProductPage;
+export default SingleProduct;
