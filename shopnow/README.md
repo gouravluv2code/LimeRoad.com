@@ -1,3 +1,4 @@
+# hanging-teeth-7136
 <h1>ShopNow ( Clone - LimeRoad.com )</h1>
 
 ShopNow is an e-commerce website where user can buy fashion products. 
@@ -32,7 +33,7 @@ ShopNow is an e-commerce website where user can buy fashion products.
 
 ## Sign In & Logout Page
 
-![signIn_logout](https://user-images.githubusercontent.com/101358022/214776988-aeae57c9-5ee5-44de-97df-0bdee7e5d6e2.png)
+![signIn_logout](https://i.imgur.com/d2kOVgO.png)
 
 
 ## Product Page ( Mens Category )
@@ -50,5 +51,6 @@ ShopNow is an e-commerce website where user can buy fashion products.
 ## Payment Page
 
 ![paymentpage](https://user-images.githubusercontent.com/101358022/214775892-292995d7-6946-4455-920f-e7748cfad971.png)
+
 
 
