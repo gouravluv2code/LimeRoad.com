@@ -29,7 +29,7 @@ ShopNow is an e-commerce website where user can buy fashion products.
 
 ## Home Page
 
-![homepage](https://user-images.githubusercontent.com/101358022/214774827-562c77a8-7cde-46a5-abc2-16283c9ddc33.png)
+![homepage](https://i.imgur.com/rJY4jbT.png)
 
 ## Sign In & Logout Page
 
@@ -38,7 +38,7 @@ ShopNow is an e-commerce website where user can buy fashion products.
 
 ## Product Page ( Mens Category )
 
-![productpage](https://user-images.githubusercontent.com/101358022/214775702-16b47e3d-a987-4320-ad26-1e7b1ab6677b.png)
+![productpage](https://i.imgur.com/qImkTM9.png)
 
 ## Add To Cart Page
 
