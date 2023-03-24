@@ -8,7 +8,7 @@ import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 
 function getdata(id) {
-  return fetch(`http://localhost:8080/products/${id}`).then((res) => res.json());
+  return fetch(`https://worried-costume-lion.cyclic.app/products/${id}`).then((res) => res.json());
 }
 function SingleProduct() {
   const [data, setData] = useState({});

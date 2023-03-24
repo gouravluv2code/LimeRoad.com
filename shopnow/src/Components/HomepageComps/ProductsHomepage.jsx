@@ -5,8 +5,7 @@ import {
   SimpleGrid,
   Text,
   useBreakpointValue,
-  Avatar,
-  Button,
+  Avatar
 } from "@chakra-ui/react";
 import axios from "axios";
 import { BsSuitHeart, BsWhatsapp } from "react-icons/bs";
@@ -24,7 +23,7 @@ const ProductsHomepage = () => {
           let newLikes = likes - 1;
 
           let d = await axios.patch(
-            `http://localhost:8080/homepageProducts/${id}`,
+            `https://worried-costume-lion.cyclic.app/homepageProducts/${id}`,
             {
               fs10: newLikes,
             }
@@ -39,7 +38,7 @@ const ProductsHomepage = () => {
 
     let newLikes = likes + 1;
     let d = await axios.patch(
-      `http://localhost:8080/homepageProducts/${id}`,
+      `https://worried-costume-lion.cyclic.app/homepageProducts/${id}`,
       {
         fs10: newLikes,
       }
@@ -52,7 +51,7 @@ const ProductsHomepage = () => {
   const getData = async () => {
     try {
       await axios
-        .get(`http://localhost:8080/homepageProducts`)
+        .get(`https://worried-costume-lion.cyclic.app/homepageProducts`)
         .then((res) => setData(res.data));
     } catch (error) {
       console.log(error);

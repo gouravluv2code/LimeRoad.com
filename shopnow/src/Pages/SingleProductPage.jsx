@@ -11,7 +11,7 @@ import { useContext } from "react";
 import { CartContext } from "./cart/context/CartContext";
 
 function getdata(id) {
-  return fetch(`http://localhost:8080/products/${id}`).then((res) => res.json());
+  return fetch(`https://worried-costume-lion.cyclic.app/products/${id}`).then((res) => res.json());
 }
 function SingleProductPage() {
   const [data, setData] = useState({});

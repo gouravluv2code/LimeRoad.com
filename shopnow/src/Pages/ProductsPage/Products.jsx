@@ -23,7 +23,7 @@ const [data,setData]=useState([])
    
 const getData=()=>{
     setLoading(true)
-    axios.get(`http://localhost:8080/products`).then((res)=>{
+    axios.get(`https://worried-costume-lion.cyclic.app/products`).then((res)=>{
         console.log(res.data)
         setData(res.data)
         setLoading(false)
@@ -36,7 +36,7 @@ const getData=()=>{
   const FilterByCategory = async (category) => {
     try {
       let response = await axios.get(
-        "http://localhost:8080/products"
+        "https://worried-costume-lion.cyclic.app/products"
       );
 
       let data = response.data;
@@ -51,7 +51,7 @@ const getData=()=>{
   const SortingLH = async () => {
     try {
       let response = await axios.get(
-        "http://localhost:8080/products"
+        "https://worried-costume-lion.cyclic.app/products"
       );
 
       let data = response.data;
@@ -65,7 +65,7 @@ const getData=()=>{
   const SortingHL = async () => {
     try {
       let response = await axios.get(
-        "http://localhost:8080/products"
+        "https://worried-costume-lion.cyclic.app/products"
       );
 
       let data = response.data;

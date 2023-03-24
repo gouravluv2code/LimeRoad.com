@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Main_Navbar from "./Components/Navbar/Main_Navbar";
 import { useEffect } from "react";

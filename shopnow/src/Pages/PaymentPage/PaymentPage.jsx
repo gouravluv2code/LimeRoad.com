@@ -5,7 +5,7 @@ import { CartContext } from "../cart/context/CartContext";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 
 const PaymentPage = () => {
-  const { data, totalProducts, totalamount } = useContext(CartContext);
+  const { data,  totalamount } = useContext(CartContext);
   return (
     <>
       <div className="outer-container">
